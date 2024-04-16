@@ -1,0 +1,161 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+<script src="https://kit.fontawesome.com/eeda6fa690.js" crossorigin="anonymous"></script>
+</head>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      background-color: #262626;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .about {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .container{
+      padding: 10px 10%;
+  }
+
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+    .logo{
+      width: 140px;
+  }
+  nav ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 10px 20px;
+  }
+  nav ul li a{
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+  }
+  nav ul li a::after{
+      content: '';
+      width: 0%;
+      height: 3px;
+      background: #ff004f;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      transition: 0.5s;
+  }
+  nav ul li a:hover::after{
+      width: 100%;
+  }
+
+    
+    .content {
+      position: absolute;
+      top: 35%;
+      left: 8%;
+    }
+
+    .content .title {
+      color: #0a0a0a;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      display: inline-block;
+      margin-bottom: 20px;
+      background: linear-gradient(120deg,
+          #1c99fe 20.69%,
+          #7644ff 50.19%,
+          #fd4766 79.69%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+    }
+
+    .content h1 {
+      color: #fff;
+      font-size: 75px;
+      font-weight: 900;
+      line-height: 90px;
+      text-transform: inherit;
+      width: 70%;
+    }
+
+    .content h1 span {
+      color: #24c0f4;
+    }
+
+    .content p {
+      width: 55%;
+      color:#fff;
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+    footer {
+      background: #262626;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      width: 100%;
+    }
+
+  </style>
+
+<body>
+  <section>
+  <div class="about">
+    <div class="container">
+    <nav>
+      <img src="sujal.png" class="logo" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="service.html" target="_blank">Service</a></li>
+        <li><a href="gallery.html" target="_blank">Gallery</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <span class="title">About Me</span>
+      <h1>Hello, I'm <span>Sujal</span></h1>
+      <h1>Introducing Me</h1>
+      <p>
+        Greetings! I am Sujal Rai, a dedicated student currently pursuing a BSc. in Computing, driven by a fervent curiosity for the endless possibilities 
+        within the digital landscape. Beyond the structured confines of academia, I immerse myself in a myriad of creative pursuits. Whether it's delving into 
+        the intricacies of coding, exploring the nuances of software development, or conceptualizing innovative solutions to complex problems, I am continuously 
+        pushing the boundaries of my knowledge. Outside of my academic endeavors, I find solace and excitement in various creative outlets, from experimenting with 
+        graphic design to tinkering with web development projects. My ultimate aspiration is to harness the power of technology to not only solve real-world challenges 
+        but also to create immersive and impactful experiences. Through my journey, I aim to not only showcase my academic achievements but also highlight my diverse skill 
+        set and unwavering passion for innovation. Join me as I embark on this exhilarating journey, where the realms of computing and creativity intersect, paving the way 
+        for boundless opportunities and transformative experiences.
+      </p>
+    </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; copyright. SUJAL</p>
+  </footer>
+</body>
+</html>
